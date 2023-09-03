@@ -1,0 +1,21 @@
+auth:
+  database: cms
+  postgresPassword: postgres
+  enablePostgresUser: true
+
+metric:
+  enabled: true
+
+resources:
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+persistence:
+  size: 4Gi
+
+primary:
+  service:
+    type: NodePort
+    nodePorts:
+      postgresql: "30001"
