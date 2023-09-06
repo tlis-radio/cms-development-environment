@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-gateway
+  namespace: cms-development
+spec:
+  rules:
+  - host: cms.api.local.development.tlis.sk
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: cms-api-gateway
+            port:
+              number: 80
