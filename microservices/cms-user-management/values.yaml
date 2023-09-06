@@ -1,0 +1,16 @@
+spec:
+  imagePullSecrets: acr-secret
+
+config:
+  connectionStrings:
+    postgres: "{{ POSTGRES_CONNECTION_STRING }}"
+    storageAccount: "{{ STORAGE_ACCOUNT_CONNECTION_STRING }}"
+  jwt:
+    audience: "http://localhost:9000"
+    authority: "tlis.eu.auth0.com"
+  serviceUrls:
+    storageAccount: "{{ STORAGE_ACCOUNT }}"
+  auth0:
+    domain: "{{ AUTH0_DOMAIN }}}"
+    clientId: "{{ AUTH0_CLIENT_ID }}"
+    clientSecret: "{{ AUTH0_CLIENT_SECRET }}"
