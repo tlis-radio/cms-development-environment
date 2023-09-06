@@ -1,0 +1,2 @@
+spec:
+  imagePullSecrets: acr-secret
