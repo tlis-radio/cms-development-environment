@@ -1,1 +1,1 @@
-helm delete postgres --kube-context=docker-desktop --namespace=postgres;
+helm delete postgres --kube-context=docker-desktop --namespace=cms-development;

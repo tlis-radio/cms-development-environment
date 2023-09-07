@@ -6,7 +6,8 @@ config:
     postgres: "{{ POSTGRES_CONNECTION_STRING }}"
     storageAccount: "{{ STORAGE_ACCOUNT_CONNECTION_STRING }}"
   jwt:
-    audience: "http://localhost:9000"
-    authority: "tlis.eu.auth0.com"
+    audience: "http://cms.api.local.development.tlis.sk"
+    authority: "https://tlis.eu.auth0.com"
+    requireHttpsMetadata: false
   serviceUrls:
     storageAccount: "{{ STORAGE_ACCOUNT }}"

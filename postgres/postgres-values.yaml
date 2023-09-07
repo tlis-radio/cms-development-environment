@@ -13,9 +13,3 @@ resources:
 
 persistence:
   size: 4Gi
-
-primary:
-  service:
-    type: NodePort
-    nodePorts:
-      postgresql: "30001"
