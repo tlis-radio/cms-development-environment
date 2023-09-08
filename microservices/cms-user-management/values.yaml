@@ -11,6 +11,6 @@ config:
   serviceUrls:
     storageAccount: "{{ STORAGE_ACCOUNT }}"
   auth0:
-    domain: "{{ AUTH0_DOMAIN }}}"
+    domain: "tlis.eu.auth0.com"
     clientId: "{{ AUTH0_CLIENT_ID }}"
     clientSecret: "{{ AUTH0_CLIENT_SECRET }}"
