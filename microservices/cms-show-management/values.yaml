@@ -11,3 +11,7 @@ config:
     requireHttpsMetadata: false
   serviceUrls:
     storageAccount: "{{ STORAGE_ACCOUNT }}"
+  rabbitmq:
+    hostName: "rabbitmq"
+    userName: "user"
+    password: ".:rabbitmq1"
