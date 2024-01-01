@@ -25,10 +25,11 @@ helm registry login tliscr.azurecr.io --username {username} --password {password
 - replace values user_name and password
 
 ```bash
+kubectl create namespace --context docker-desktop cms-development
 kubectl create secret docker-registry acr-secret --context docker-desktop --namespace cms-development --docker-server=tliscr.azurecr.io --docker-username={user_name}  --docker-password={password}
 ```
 
-### 2. Add host ``cms.api.local.development.tlis.sk`` to to hosts file
+### 2. Add host ``cms.api.local.development.tlis.sk`` to hosts file
 
 ### 3. Create .env.local file in root of this repository and populate values
 
